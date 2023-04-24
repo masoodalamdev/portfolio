@@ -9,6 +9,7 @@ import fxcryptospot from '../../Assets/Images/projects/fxcryptospot.png'
 import modernfashiongirl from '../../Assets/Images/projects/modernfashiongirl.png'
 import pakeservicesapp from '../../Assets/Images/projects/pakeservicesapp.png'
 import omniteknologies from '../../Assets/Images/projects/omniteknologies.png'
+import { Link } from 'react-router-dom';
 
 
 
@@ -29,6 +30,7 @@ export default function projects() {
       </Grid>
      
         <Grid item md={4} xs={6} >
+          <a target='_blank' href='https://www.softwarenapps.com' style={{textDecoration: 'none'}} >
           <Card>
             <CardMedia
               component="img"
@@ -56,8 +58,11 @@ export default function projects() {
               </Typography>
             </CardContent>
           </Card>
+          </a>
         </Grid>
         <Grid item  md={4} xs={6} >
+        <a target='_blank' href='https://www.fxcryptospot.com' style={{textDecoration: 'none'}} >
+
           <Card>
             <CardMedia
               component="img"
@@ -85,8 +90,11 @@ export default function projects() {
               </Typography>
             </CardContent>
           </Card>
+          </a>
         </Grid>
         <Grid item  md={4} xs={6} >
+        <a target='_blank' href='https://www.modernfashiongirl.com' style={{textDecoration: 'none'}} >
+
           <Card>
             <CardMedia
               component="img"
@@ -115,8 +123,11 @@ export default function projects() {
               </Typography>
             </CardContent>
           </Card>
+          </a>
         </Grid>
         <Grid item md={4} xs={6} >
+        <a target='_blank' href='https://www.pakistaneservices.com' style={{textDecoration: 'none'}} >
+
           <Card>
             <CardMedia
               component="img"
@@ -144,8 +155,11 @@ export default function projects() {
               </Typography>
             </CardContent>
           </Card>
+          </a>
         </Grid>
         <Grid item  md={4} xs={6} >
+        <a target='_blank' href='https://www.omniteknologies.com' style={{textDecoration: 'none'}} >
+
           <Card>
             <CardMedia
               component="img"
@@ -173,8 +187,11 @@ export default function projects() {
               </Typography>
             </CardContent>
           </Card>
+          </a>
         </Grid>
         <Grid item md={4} xs={6} >
+        <a target='_blank' href='https://play.google.com/store/apps/details?id=com.pakistan.eservices.app' style={{textDecoration: 'none'}} >
+
           <Card>
             <CardMedia
               component="img"
@@ -203,6 +220,7 @@ export default function projects() {
               </Typography>
             </CardContent>
           </Card>
+          </a>
         </Grid>
 
 

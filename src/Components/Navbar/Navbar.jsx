@@ -98,7 +98,8 @@ export default function Navbar() {
               <MenuItem onClick={handleCloseNavMenu}><NavLink to='/skills'><Button color="inherit">Skills</Button></NavLink></MenuItem>
               <MenuItem onClick={handleCloseNavMenu}><NavLink to='/experience'><Button color="inherit">Experience</Button></NavLink></MenuItem>
               <MenuItem onClick={handleCloseNavMenu}><NavLink to='/about'><Button color="inherit">About Me</Button></NavLink></MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}><NavLink to='/contact'><Button color="inherit">Contact Me</Button></NavLink></MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}><a href='#contact'><Button color="inherit" >Contact Me</Button></a>
+</MenuItem>
                
           
           
@@ -135,7 +136,7 @@ export default function Navbar() {
           <NavLink to='/skills'><Button color="inherit" >Skills</Button></NavLink>
           <NavLink to='/experience'><Button color="inherit" >Experience</Button></NavLink>
           <NavLink to='/about'><Button color="inherit" >About Me</Button></NavLink>
-          <NavLink to='/contact'><Button color="inherit" >Contact Me</Button></NavLink>
+          <a href='#contact' ><Button color="inherit" >Contact Me</Button></a>
           </Box>
         </Grid>
 

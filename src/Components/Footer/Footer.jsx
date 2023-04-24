@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
     
-    <Box
+    <Box id="contact"
     sx={{bgcolor: '#1976d2', color: '#fff'}}
     // display="flex"
     // justifyContent="center"
