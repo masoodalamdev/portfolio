@@ -29,10 +29,10 @@ export default function projects() {
     <br/>
       </Grid>
      
-        <Grid item md={4} xs={6} >
+        <Grid item md={4} xs={12}>
           <a target='_blank' href='https://www.softwarenapps.com' style={{textDecoration: 'none'}} >
-          <Card>
-            <CardMedia
+          <Card sx={{minHeight: '500px', maxHeight: '500px'}}>
+            <CardMedia  
               component="img"
               height="350"
               image={softwarenapps}
@@ -60,10 +60,10 @@ export default function projects() {
           </Card>
           </a>
         </Grid>
-        <Grid item  md={4} xs={6} >
+        <Grid item  md={4} xs={12} >
         <a target='_blank' href='https://www.fxcryptospot.com' style={{textDecoration: 'none'}} >
 
-          <Card>
+        <Card sx={{minHeight: '500px', maxHeight: '500px'}}>
             <CardMedia
               component="img"
               height="350"
@@ -92,10 +92,10 @@ export default function projects() {
           </Card>
           </a>
         </Grid>
-        <Grid item  md={4} xs={6} >
+        <Grid item  md={4} xs={12} >
         <a target='_blank' href='https://www.modernfashiongirl.com' style={{textDecoration: 'none'}} >
 
-          <Card>
+        <Card sx={{minHeight: '500px', maxHeight: '500px'}}>
             <CardMedia
               component="img"
               height="350"
@@ -125,10 +125,10 @@ export default function projects() {
           </Card>
           </a>
         </Grid>
-        <Grid item md={4} xs={6} >
+        <Grid item md={4} xs={12} >
         <a target='_blank' href='https://www.pakistaneservices.com' style={{textDecoration: 'none'}} >
 
-          <Card>
+        <Card sx={{minHeight: '500px', maxHeight: '500px'}}>
             <CardMedia
               component="img"
               height="350"
@@ -157,10 +157,10 @@ export default function projects() {
           </Card>
           </a>
         </Grid>
-        <Grid item  md={4} xs={6} >
+        <Grid item  md={4} xs={12} >
         <a target='_blank' href='https://www.omniteknologies.com' style={{textDecoration: 'none'}} >
 
-          <Card>
+        <Card sx={{minHeight: '500px', maxHeight: '500px'}}>
             <CardMedia
               component="img"
               height="350"
@@ -189,10 +189,10 @@ export default function projects() {
           </Card>
           </a>
         </Grid>
-        <Grid item md={4} xs={6} >
+        <Grid item md={4} xs={12} >
         <a target='_blank' href='https://play.google.com/store/apps/details?id=com.pakistan.eservices.app' style={{textDecoration: 'none'}} >
 
-          <Card>
+        <Card sx={{minHeight: '500px', maxHeight: '500px'}}>
             <CardMedia
               component="img"
               height="350"

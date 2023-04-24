@@ -23,7 +23,7 @@ export default function Skills() {
     <>
 
 
-      <Grid container spacing={4} sx={{p:4}}>
+      <Grid container spacing={6} sx={{p:4}}>
       <Grid item xs={12}>
 
       <Typography variant="h4" gutterBottom sx={{textAlign: 'center', color: '#444'}}>
@@ -37,7 +37,7 @@ export default function Skills() {
       </Grid>
      
         <Grid item md={3} xs={6}>
-          <Card >
+          <Card sx={{minHeight: '240px', maxHeight: '240px'}}>
             <CardMedia
               component="img"
               height="150"
@@ -55,7 +55,7 @@ export default function Skills() {
           </Card>
         </Grid>
         <Grid item md={3} xs={6}>
-          <Card >
+        <Card sx={{minHeight: '240px', maxHeight: '240px'}}>
             <CardMedia
               component="img"
               height="150"
@@ -73,7 +73,7 @@ export default function Skills() {
           </Card>
         </Grid>
         <Grid item md={3} xs={6}>
-          <Card >
+        <Card sx={{minHeight: '240px', maxHeight: '240px'}}>
             <CardMedia
               component="img"
               height="150"
@@ -91,7 +91,7 @@ export default function Skills() {
           </Card>
         </Grid>
         <Grid item md={3} xs={6}>
-          <Card >
+        <Card sx={{minHeight: '240px', maxHeight: '240px'}}>
             <CardMedia
               component="img"
               height="150"
@@ -109,7 +109,7 @@ export default function Skills() {
           </Card>
         </Grid>
         <Grid item md={3} xs={6}>
-          <Card >
+        <Card sx={{minHeight: '240px', maxHeight: '240px'}}>
             <CardMedia
               component="img"
               height="150"
@@ -127,7 +127,7 @@ export default function Skills() {
           </Card>
         </Grid>
         <Grid item md={3} xs={6}>
-          <Card >
+        <Card sx={{minHeight: '240px', maxHeight: '240px'}}>
             <CardMedia
               component="img"
               height="150"
@@ -145,7 +145,7 @@ export default function Skills() {
           </Card>
         </Grid>
         <Grid item md={3} xs={6}>
-          <Card >
+        <Card sx={{minHeight: '240px', maxHeight: '240px'}}>
             <CardMedia
               component="img"
               height="150"
@@ -163,7 +163,7 @@ export default function Skills() {
           </Card>
         </Grid>
         <Grid item md={3} xs={6}>
-          <Card >
+        <Card sx={{minHeight: '240px', maxHeight: '240px'}}>
             <CardMedia
               component="img"
               height="150"
@@ -181,7 +181,7 @@ export default function Skills() {
           </Card>
         </Grid>
         <Grid item md={3} xs={6}>
-          <Card >
+        <Card sx={{minHeight: '240px', maxHeight: '240px'}}>
             <CardMedia
               component="img"
               height="150"
@@ -199,7 +199,7 @@ export default function Skills() {
           </Card>
         </Grid>
         <Grid item md={3} xs={6}>
-          <Card >
+        <Card sx={{minHeight: '240px', maxHeight: '240px'}}>
             <CardMedia
               component="img"
               height="150"
@@ -217,7 +217,7 @@ export default function Skills() {
           </Card>
         </Grid>
         <Grid item md={3} xs={6}>
-          <Card >
+        <Card sx={{minHeight: '240px', maxHeight: '240px'}}>
             <CardMedia
               component="img"
               height="150"
@@ -235,7 +235,7 @@ export default function Skills() {
           </Card>
         </Grid>
         <Grid item md={3} xs={6}>
-          <Card >
+        <Card sx={{minHeight: '240px', maxHeight: '240px'}}>
             <CardMedia
               component="img"
               height="150"
@@ -253,7 +253,7 @@ export default function Skills() {
           </Card>
         </Grid>
         <Grid item md={3} xs={6}>
-          <Card >
+        <Card sx={{minHeight: '240px', maxHeight: '240px'}}>
             <CardMedia
               component="img"
               height="150"
