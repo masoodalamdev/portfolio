@@ -23,7 +23,7 @@ export default function Skills() {
     <>
 
 
-      <Grid container spacing={4} sx={{p:1}}>
+      <Grid container spacing={4} sx={{p:4}}>
       <Grid item xs={12}>
 
       <Typography variant="h4" gutterBottom sx={{textAlign: 'center', color: '#444'}}>

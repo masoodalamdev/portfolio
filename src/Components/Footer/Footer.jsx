@@ -11,7 +11,7 @@ export default function Footer() {
   >
     
     <Typography variant='h6' style={{position: 'relative', bottom: 0, textAlign: 'center'}}>
-    Designed and Developed by Masood Alam - © rights reserved 2018-2023</Typography>
+    Designed and Developed by Masood Alam - © 2023 All rights reserved </Typography>
   </Box>
   )
 }

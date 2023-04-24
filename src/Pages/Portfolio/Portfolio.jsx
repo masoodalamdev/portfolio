@@ -15,7 +15,7 @@ import omniteknologies from '../../Assets/Images/portfolio/omniteknologies.png'
 export default function Portfolio() {
   return (
     <>
-      <Grid container spacing={4} sx={{p:2}}>
+      <Grid container spacing={4} sx={{p:4}}>
       <Grid item xs={12}>
 
       <Typography variant="h4" gutterBottom sx={{textAlign: 'center', color: '#444'}}>
@@ -38,7 +38,7 @@ export default function Portfolio() {
             />
             <CardHeader
               title={'SoftwarenApps'}
-              subheader={'Download Latest Software for Windows & Android'}
+              subheader={'Software for Windows & Android'}
               sx={{textAlign: 'center', color: '#1976d2', p:1}}
             />
             <CardContent>
@@ -183,7 +183,7 @@ export default function Portfolio() {
               alt="blog image"
             />
             <CardHeader
-              title={'Pakistan E-Services App'}
+              title={'Pak E-Services App'}
               subheader={'Online Services in Pakistan'}
               sx={{textAlign: 'center', color: '#1976d2', p:1}}
             />

@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
     
-    <Grid container spacing={4} sx={{p:1}}>
+    <Grid container spacing={4} sx={{p:2}}>
       <Grid item xs={12}>
 
       <Typography variant="h4" gutterBottom sx={{textAlign: 'center', color: '#444'}}>
@@ -17,7 +17,9 @@ export default function About() {
 
       </Grid>
       </Grid>
-    <Typography variant='h6'>
+      <Box sx={{p:4}}>
+
+    <Typography variant='h6' sx={{color: '#444'}}>
 
       Hi, I am a Full Stack Web Developer and Web Designer. An Open Source enthusiast and a Computer Science student from Pakistan.
 
@@ -27,7 +29,7 @@ I am also a freelancer and have worked on various projects for clients and open 
     </Typography>
 
 <br/>
-<Typography variant='h6'>
+<Typography variant='h6' sx={{color: '#444'}}>
 
  My passion is making ideas come to life, be it working solo, as part of a team or leading a team of fellow developers.
 
@@ -39,9 +41,12 @@ I am also a freelancer and have worked on various projects for clients and open 
     
     I consider myself creative and hardworking, as my stats show. If you liked my profile so far, drop me a message and we'll discuss how I can be useful to your project.
     </Typography>
- 
+      </Box>
+  
  <Education/>
  <Certification/>
+ 
+
   </>
   
   )

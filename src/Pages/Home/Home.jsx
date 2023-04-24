@@ -4,18 +4,20 @@ import { Box, Button, Grid, Typography } from '@mui/material'
 import Portfolio from '../Portfolio/Portfolio'
 import Skills from '../Skills/Skills'
 import About from '../About/About'
+import './home.css'
+import Experience from '../Experience/Experience'
 export default function Home() {
   return (
     <>
     <Grid container spacing={2}>
-    <Grid item xs={6} sx={{mt: '10%'}} >
-    <Typography variant="h5" gutterBottom sx={{textAlign: 'center', color: '#444'}}>
+    <Grid item xs={12} md={6} sx={{mt: '10%'}} >
+    <Typography variant="h5" gutterBottom sx={{textAlign: 'center', color: '#444'}} id='Iam'>
      I AM
     </Typography>
-    <Typography variant="h3" gutterBottom sx={{textAlign: 'center', color: '#444', fontFamily: 'cursive'}}>
+    <Typography variant="h3" gutterBottom sx={{textAlign: 'center', color: '#444', fontFamily: 'cursive'}} id='Masood'>
      Masood Alam
     </Typography>
-    <Typography variant="h5" gutterBottom sx={{textAlign: 'center', color: '#444'}}>
+    <Typography variant="h5" gutterBottom sx={{textAlign: 'center', color: '#444'}} id='Developer' >
      Full Stack Web Developer
     </Typography>
     <br/>
@@ -23,7 +25,7 @@ export default function Home() {
       Hire Me
     </Button>
 </Grid>
-<Grid item xs={6}>
+<Grid item xs={12} md={6}>
 <img src={Developer} alt="backgroundImage" width='100%' height='100%' />
  
  
@@ -32,6 +34,7 @@ export default function Home() {
   </Grid>
    <Portfolio/>
    <Skills/>
+   <Experience/>
    <About/>
 
    </>
