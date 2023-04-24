@@ -3,23 +3,23 @@ import React, { useEffect, useState } from 'react'
 import { styled } from "@mui/material/styles";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
-import softwarenapps from '../../Assets/Images/portfolio/softwarenapps.png'
-import pakistaneservices from '../../Assets/Images/portfolio/pakistaneservices.png'
-import fxcryptospot from '../../Assets/Images/portfolio/fxcryptospot.png'
-import modernfashiongirl from '../../Assets/Images/portfolio/modernfashiongirl.png'
-import pakeservicesapp from '../../Assets/Images/portfolio/pakeservicesapp.png'
-import omniteknologies from '../../Assets/Images/portfolio/omniteknologies.png'
+import softwarenapps from '../../Assets/Images/projects/softwarenapps.png'
+import pakistaneservices from '../../Assets/Images/projects/pakistaneservices.png'
+import fxcryptospot from '../../Assets/Images/projects/fxcryptospot.png'
+import modernfashiongirl from '../../Assets/Images/projects/modernfashiongirl.png'
+import pakeservicesapp from '../../Assets/Images/projects/pakeservicesapp.png'
+import omniteknologies from '../../Assets/Images/projects/omniteknologies.png'
 
 
 
-export default function Portfolio() {
+export default function projects() {
   return (
     <>
       <Grid container spacing={4} sx={{p:4}}>
       <Grid item xs={12}>
 
       <Typography variant="h4" gutterBottom sx={{textAlign: 'center', color: '#444'}}>
-     Portfolio
+     Projects
     </Typography>
     <br/>
       <Typography variant="h5" gutterBottom sx={{textAlign: 'center', color: '#444'}}>
@@ -155,7 +155,7 @@ export default function Portfolio() {
             />
             <CardHeader
               title={'Omni Teknologies'}
-              subheader={'Developer Portfolio'}
+              subheader={'Developer projects'}
               sx={{textAlign: 'center', color: '#1976d2', p:1}}
             />
             <CardContent>

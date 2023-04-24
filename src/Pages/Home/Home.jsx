@@ -1,7 +1,7 @@
 import React from 'react'
 import Developer from '../../Assets/Images/developer.svg'
 import { Box, Button, Grid, Typography } from '@mui/material'
-import Portfolio from '../Portfolio/Portfolio'
+import Projects from '../Projects/Projects'
 import Skills from '../Skills/Skills'
 import About from '../About/About'
 import './home.css'
@@ -32,7 +32,7 @@ export default function Home() {
 
 </Grid>
   </Grid>
-   <Portfolio/>
+   <Projects/>
    <Skills/>
    <Experience/>
    <About/>

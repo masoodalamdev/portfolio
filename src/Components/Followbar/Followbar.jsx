@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom'
 const StyledIcon = {
   MuiIcon: {
     fontSize: '50px',
-    padding: '10px'
+    padding: '10px',
+    color: '#fff'
   }
 }
 

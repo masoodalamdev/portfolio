@@ -94,7 +94,7 @@ export default function Navbar() {
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))} */}
-              <MenuItem onClick={handleCloseNavMenu}><NavLink to='/portfolio'><Button color="inherit">Portfolio</Button></NavLink></MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}><NavLink to='/projects'><Button color="inherit">Projects</Button></NavLink></MenuItem>
               <MenuItem onClick={handleCloseNavMenu}><NavLink to='/skills'><Button color="inherit">Skills</Button></NavLink></MenuItem>
               <MenuItem onClick={handleCloseNavMenu}><NavLink to='/experience'><Button color="inherit">Experience</Button></NavLink></MenuItem>
               <MenuItem onClick={handleCloseNavMenu}><NavLink to='/about'><Button color="inherit">About Me</Button></NavLink></MenuItem>
@@ -111,7 +111,7 @@ export default function Navbar() {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
@@ -131,7 +131,7 @@ export default function Navbar() {
         <Grid item>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
            
-             <NavLink to='/portfolio'><Button color="inherit">Portfolio</Button></NavLink>
+             <NavLink to='/projects'><Button color="inherit">Projects</Button></NavLink>
           <NavLink to='/skills'><Button color="inherit" >Skills</Button></NavLink>
           <NavLink to='/experience'><Button color="inherit" >Experience</Button></NavLink>
           <NavLink to='/about'><Button color="inherit" >About Me</Button></NavLink>

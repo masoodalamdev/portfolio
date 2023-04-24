@@ -4,7 +4,7 @@ import { Box, Card, CardContent, Chip, Grid, Stack, Typography } from '@mui/mate
 export default function Contact() {
   return (
     <>
-    <Grid container spacing={4} sx={{p:2}}>
+    <Grid container spacing={4} sx={{p:2}} >
     <Grid item xs={12}>
 
     <Typography variant="h4" gutterBottom sx={{textAlign: 'center', color: '#444'}}>
@@ -13,13 +13,17 @@ export default function Contact() {
   
     </Grid>
     </Grid>
-    <div>Contact
-      <br/>
-        Email: masood.alam.987@gmail.com
-        <br/>
-        Whatsapp: +923472503500
+    <Box sx={{p:4, mb: '20%'}}>
+    <Typography variant='h5' sx={{color: '#444'}}>
+    Email: masood.alam.987@gmail.com
+    </Typography>
+    <br/>
+    <Typography variant='h5' sx={{color: '#444'}}>
+    Whatsapp: +923472503500
+    </Typography>
         
-    </div>
+    </Box>
+   
     </>
   )
 }
