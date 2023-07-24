@@ -7,13 +7,13 @@ export default function Footer() {
     <>
     
     <Box id="contact"
-    sx={{bgcolor: '#1976d2', color: '#fff'}}
+    sx={{bgcolor: '#444', color: '#fff', px:{xs:12}}}
     // display="flex"
     // justifyContent="center"
     // alignItems="center"
     
     // minHeight="100vh"
-  ><Stack direction='column' sx={{p:4}}>
+  ><Stack direction='column' sx={{py:4}}>
 
   <Typography variant="h4" gutterBottom sx={{textAlign: 'left', color: '#fff'}}>
     Contact

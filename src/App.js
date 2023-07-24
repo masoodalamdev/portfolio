@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Followbar from './Components/Followbar/Followbar';
 import Footer from './Components/Footer/Footer';
@@ -11,28 +11,33 @@ import Home from './Pages/Home/Home';
 
 function App() {
   return (
-    <>
+    // <div>
       
 
 
 
-    <BrowserRouter>
+    // {/* <BrowserRouter> */}
+    // <Navbar/>
+    // {/* <Home/> */}
+    // {/* <Routes> */}
+    //   {/* <Route path='/portfolio' element={<Home/>}/> */}
+    //   {/* <Route path='/projects' element={<Projects/>}/>
+    //   <Route path='/skills' element={<Skills/>}/>
+    //   <Route path='/experience' element={<Experience/>}/>
+    //   <Route path='/about' element={<About/>}/> */}
+    //   {/* <Route path='/contact' element={<Contact/>}/> */}
+    // {/* </Routes> */}
+    // {/* // </BrowserRouter> */}
+    //   {/* <Followbar/> */}
+    //   {/* <Footer/> */}
+
+
+    //   </div>
+    <div className="App">
+   
     <Navbar/>
-    <Routes>
-      <Route path='/portfolio' element={<Home/>}/>
-      <Route path='/projects' element={<Projects/>}/>
-      <Route path='/skills' element={<Skills/>}/>
-      <Route path='/experience' element={<Experience/>}/>
-      <Route path='/about' element={<About/>}/>
-      {/* <Route path='/contact' element={<Contact/>}/> */}
-    </Routes>
-    </BrowserRouter>
-      {/* <Followbar/> */}
-      <Footer/>
-
-
-      </>
-      
+    <Home/>
+  </div>
 
   );
 }

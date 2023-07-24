@@ -6,10 +6,13 @@ import Skills from '../Skills/Skills'
 import About from '../About/About'
 import './home.css'
 import Experience from '../Experience/Experience'
+import Footer from '../../Components/Footer/Footer'
+import Navbar from '../../Components/Navbar/Navbar'
 export default function Home() {
   return (
     <>
-    <Grid container spacing={2}>
+    <Box sx={{px:{xs:12}, minHeight: 100 + 'vh'}} >
+    <Grid container >
     <Grid item xs={12} md={6} sx={{mt: '10%'}} >
     <Typography variant="h5" gutterBottom sx={{textAlign: 'center', color: '#444'}} id='Iam'>
      I AM
@@ -32,11 +35,12 @@ export default function Home() {
 
 </Grid>
   </Grid>
-   <Projects/>
-   <Skills/>
+   <Projects  />
+   <Skills />
    <Experience/>
    <About/>
-
+   </Box>
+    <Footer/>
    </>
   )
 }

@@ -30,7 +30,7 @@ export default function Followbar() {
 
     <Facebook sx={StyledIcon.MuiIcon} />
   </a>
-  <a href='https://www.linkedin.com/in/masoodg1998/' target='_blank'>
+  <a href='https://www.linkedin.com/in/masoodalamdev/' target='_blank'>
     <LinkedIn  sx={StyledIcon.MuiIcon} />
     </a>
     <a href='https://github.com/masoodalamdev' target='_blank'>

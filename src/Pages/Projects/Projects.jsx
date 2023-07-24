@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Chip, Grid, Stack, Typography } from '@mui/material'
+import { Box, Card, CardContent, Chip, Grid, Stack, Typography, Button } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import { styled } from "@mui/material/styles";
 import CardHeader from "@mui/material/CardHeader";
@@ -10,227 +10,49 @@ import modernfashiongirl from '../../Assets/Images/projects/modernfashiongirl.pn
 import pakeservicesapp from '../../Assets/Images/projects/pakeservicesapp.png'
 import omniteknologies from '../../Assets/Images/projects/omniteknologies.png'
 import { Link } from 'react-router-dom';
+import PageHeader from '../../Components/PageHeader/PageHeader';
 
 
 
 export default function projects() {
   return (
     <>
-      <Grid container spacing={4} sx={{p:4}}>
+      <Grid container id="projects" sx={{mt: 16}}>
       <Grid item xs={12}>
-
-      <Typography variant="h4" gutterBottom sx={{textAlign: 'center', color: '#444'}}>
-     Projects
-    </Typography>
-    <br/>
-      <Typography variant="h5" gutterBottom sx={{textAlign: 'center', color: '#444'}}>
-     some of my latest works
-    </Typography>
-    <br/>
-      </Grid>
-     
-        <Grid item md={4} xs={12}>
-          <a target='_blank' href='https://www.softwarenapps.com' style={{textDecoration: 'none'}} >
-          <Card sx={{minHeight: '500px', maxHeight: '500px'}}>
-            <CardMedia  
-              component="img"
-              height="350"
-              image={softwarenapps}
-              alt="blog image"
-            />
-            <CardHeader
-              title={'SoftwarenApps'}
-              subheader={'Software for Windows & Android'}
-              sx={{textAlign: 'center', color: '#1976d2', p:1}}
-            />
-            <CardContent>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                style={{
-                  
-                }}
-              ><Stack direction="row" spacing={1} sx={{justifyContent: 'center'}} >
-
-                <Chip color="primary" size="small" label="Blogger" variant='outlined' />
-              </Stack>
-
-              </Typography>
-            </CardContent>
-          </Card>
-          </a>
+        <PageHeader
+        heading='Projects'
+        />
         </Grid>
-        <Grid item  md={4} xs={12} >
-        <a target='_blank' href='https://www.fxcryptospot.com' style={{textDecoration: 'none'}} >
+        <Grid item xs={12} md={6}>
+          <img src={fxcryptospot} alt="backgroundImage" width='100%' height='100%' />
 
-        <Card sx={{minHeight: '500px', maxHeight: '500px'}}>
-            <CardMedia
-              component="img"
-              height="350"
-              image={fxcryptospot}
-              alt="blog image"
-            />
-            <CardHeader
-              title={'Forex Crypto Spot'}
-              subheader={'Crypto Currency Blog'}
-              sx={{textAlign: 'center', color: '#1976d2', p:1}}
-            />
-            <CardContent>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                style={{
-                  
-                }}
-              ><Stack direction="row" spacing={1} sx={{justifyContent: 'center'}} >
 
-                <Chip color="primary" size="small" label="Wordpress" variant='outlined' />
-              </Stack>
 
-              </Typography>
-            </CardContent>
-          </Card>
-          </a>
         </Grid>
-        <Grid item  md={4} xs={12} >
-        <a target='_blank' href='https://www.modernfashiongirl.com' style={{textDecoration: 'none'}} >
+        <Grid item xs={12} md={6} sx={{ mt: '10%' }} >
+         
+          <Typography variant="h4" gutterBottom sx={{ textAlign: 'center', color: '#444', fontFamily: 'cursive' }} >
+            Forex Crypto Spot App
+          </Typography>
+          <Typography variant="h6" gutterBottom sx={{ textAlign: 'center', color: '#444' }} >
+            React Js Blog App with Authentication and Admin Dashboard
+          </Typography>
+          <br />
+          <Stack direction="row" spacing={1} sx={{ justifyContent: 'center' }} >
 
-        <Card sx={{minHeight: '500px', maxHeight: '500px'}}>
-            <CardMedia
-              component="img"
-              height="350"
-              image={modernfashiongirl}
-              alt="blog image"
-            />
-            <CardHeader
-              title={'Modern Fashion Girl'}
-              subheader={'Amazon Affiliate Blog'}
-              sx={{textAlign: 'center', color: '#1976d2', p:1}}
-            />
-            <CardContent>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                style={{
-                  
-                }}
-              ><Stack direction="row" spacing={1} sx={{justifyContent: 'center'}} >
-
-                <Chip color="primary" size="small" label="Blogger" variant='outlined' />
-                <Chip color="primary" size="small" label="Amazon Affiliate" variant='outlined' />
-              </Stack>
-
-              </Typography>
-            </CardContent>
-          </Card>
-          </a>
+                    <Chip color="primary" size="small" label="React Js" variant='outlined' />
+                    <Chip color="primary" size="small" label="Node Js" variant='outlined' />
+                    <Chip color="primary" size="small" label="Mongo DB" variant='outlined' />
+                  </Stack>
+                  <br/>
+                  <Stack direction="row" spacing={1} sx={{ justifyContent: 'center' }} >
+          <Button variant='contained' href='https://www.fxcryptospot.com' disableElevation sx={{textTransform: 'capitalize' , bgcolor: '#444', "&:hover": {bgcolor: "#444"}}}>
+            Read more
+          </Button>
+          </Stack>
         </Grid>
-        <Grid item md={4} xs={12} >
-        <a target='_blank' href='https://www.pakistaneservices.com' style={{textDecoration: 'none'}} >
-
-        <Card sx={{minHeight: '500px', maxHeight: '500px'}}>
-            <CardMedia
-              component="img"
-              height="350"
-              image={pakistaneservices}
-              alt="blog image"
-            />
-            <CardHeader
-              title={'Pakistan E-Services'}
-              subheader={'Online Services in Pakistan'}
-              sx={{textAlign: 'center', color: '#1976d2', p:1}}
-            />
-            <CardContent>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                style={{
-                  
-                }}
-              ><Stack direction="row" spacing={1} sx={{justifyContent: 'center'}} >
-
-                <Chip color="primary" size="small" label="Blogger" variant='outlined' />
-              </Stack>
-
-              </Typography>
-            </CardContent>
-          </Card>
-          </a>
-        </Grid>
-        <Grid item  md={4} xs={12} >
-        <a target='_blank' href='https://www.omniteknologies.com' style={{textDecoration: 'none'}} >
-
-        <Card sx={{minHeight: '500px', maxHeight: '500px'}}>
-            <CardMedia
-              component="img"
-              height="350"
-              image={omniteknologies}
-              alt="blog image"
-            />
-            <CardHeader
-              title={'Omni Teknologies'}
-              subheader={'Developer projects'}
-              sx={{textAlign: 'center', color: '#1976d2', p:1}}
-            />
-            <CardContent>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                style={{
-                  
-                }}
-              ><Stack direction="row" spacing={1} sx={{justifyContent: 'center'}} >
-
-                <Chip color="primary" size="small" label="Wordpress" variant='outlined' />
-              </Stack>
-
-              </Typography>
-            </CardContent>
-          </Card>
-          </a>
-        </Grid>
-        <Grid item md={4} xs={12} >
-        <a target='_blank' href='https://play.google.com/store/apps/details?id=com.pakistan.eservices.app' style={{textDecoration: 'none'}} >
-
-        <Card sx={{minHeight: '500px', maxHeight: '500px'}}>
-            <CardMedia
-              component="img"
-              height="350"
-              image={pakeservicesapp}
-              alt="blog image"
-            />
-            <CardHeader
-              title={'Pak E-Services App'}
-              subheader={'Online Services in Pakistan'}
-              sx={{textAlign: 'center', color: '#1976d2', p:1}}
-            />
-            <CardContent>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                style={{
-                  
-                }}
-              ><Stack direction="row" spacing={1} sx={{justifyContent: 'center'}} >
-
-                <Chip color="primary" size="small" label="Java" variant='outlined' />
-                <Chip color="primary" size="small" label="Webview" variant='outlined' />
-              </Stack>
-
-              </Typography>
-            </CardContent>
-          </Card>
-          </a>
-        </Grid>
-
-
-
-
-
-
 
       </Grid>
-
     </>
   )
 }
