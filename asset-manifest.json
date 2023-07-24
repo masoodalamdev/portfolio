@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.206e006b.css",
-    "main.js": "/portfolio/static/js/main.7f9cbbe2.js",
+    "main.css": "/portfolio/static/css/main.574c04c1.css",
+    "main.js": "/portfolio/static/js/main.db52d593.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/fxcryptospot.png": "/portfolio/static/media/fxcryptospot.ae74a3b75cd0a654905f.png",
     "static/media/modernfashiongirl.png": "/portfolio/static/media/modernfashiongirl.6c10d7cba55671190cb2.png",
-    "static/media/fxcryptospot.png": "/portfolio/static/media/fxcryptospot.bd2b2b9b0b47df1ec1b1.png",
     "static/media/pakeservicesapp.png": "/portfolio/static/media/pakeservicesapp.4f387b335559554cf0f1.png",
     "static/media/pakistaneservices.png": "/portfolio/static/media/pakistaneservices.1414c3fdec97699c8897.png",
     "static/media/omniteknologies.png": "/portfolio/static/media/omniteknologies.a0d39ebe73f229c0280a.png",
@@ -21,12 +21,12 @@
     "static/media/blogger.png": "/portfolio/static/media/blogger.8adf5e82db9c663c740d.png",
     "static/media/mongodb.png": "/portfolio/static/media/mongodb.2178943141ba7e7fae4e.png",
     "index.html": "/portfolio/index.html",
-    "main.206e006b.css.map": "/portfolio/static/css/main.206e006b.css.map",
-    "main.7f9cbbe2.js.map": "/portfolio/static/js/main.7f9cbbe2.js.map",
+    "main.574c04c1.css.map": "/portfolio/static/css/main.574c04c1.css.map",
+    "main.db52d593.js.map": "/portfolio/static/js/main.db52d593.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.206e006b.css",
-    "static/js/main.7f9cbbe2.js"
+    "static/css/main.574c04c1.css",
+    "static/js/main.db52d593.js"
   ]
 }
