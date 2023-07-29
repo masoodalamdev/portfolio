@@ -1,12 +1,11 @@
 import React from 'react'
-import Developer from '../../Assets/Images/developer.svg'
 import fullstack from '../../Assets/Images/fullstack.gif'
-import { Box, Button, Grid, Stack, Typography } from '@mui/material'
+import { Box, ButtonGroup, Grid, Stack } from '@mui/material'
 import './LandingPage.css'
 import MuiButton from '../../Components/MuiButton/MuiButton'
 export default function LandingPage() {
   return (
-    <Box sx={{px:{xs:8}, minHeight: 100 + 'vh'}} >
+    <Box sx={{px: { xs: 2, md: 6 }, minHeight: 100 + 'vh'}}  >
     <Grid container >
 
     <Grid item xs={12} md={6}  >
@@ -22,10 +21,16 @@ export default function LandingPage() {
       <li><span>Blogger</span></li>
     </ul>
     <Stack direction='row' sx={{p:2, justifyContent: 'center'}}>
-    <MuiButton
+     <ButtonGroup size="large" aria-label="large button group">
+     <MuiButton
     text='Hire Me'
     href='#contact'
     />
+    <MuiButton
+    text='My Resume'
+    href='https://drive.google.com/file/d/1ZtylEdd5WIP19wq90o1U0LCLppEy6NAj/view?usp=drive_link'
+    />
+      </ButtonGroup>
     </Stack>
   </div>
 
@@ -40,7 +45,7 @@ export default function LandingPage() {
     </Typography>
     <br/>
     <Stack direction='row'>
-    <Button href="#contact" variant='outlined' sx={{display: 'flex', margin: '0 auto', bgcolor: '#8B13FD', color: '#fff', borderColor: '#8B13FD', '&:hover': {color: '#8B13FD', borderColor: '#8B13FD'}}}>
+    <Button href="#contact" variant='outlined' sx={{display: 'flex', margin: '0 auto', bgcolor: '#6e45e2', color: '#fff', borderColor: '#6e45e2', '&:hover': {color: '#6e45e2', borderColor: '#6e45e2'}}}>
       Hire Me
     </Button>
     </Stack> */}

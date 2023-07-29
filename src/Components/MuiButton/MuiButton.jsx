@@ -7,8 +7,8 @@ export default function MuiButton(props) {
     <Button variant="contained"
       href={href}
       sx={{
-        textTransform: 'capitalize', bgcolor: '#8B13FD', color: "#fff", fontWeight: 'bold',
-        '&:hover': { bgcolor: '#8B13FD', color: "#fff" }, ...sx
+        textTransform: 'capitalize', bgcolor: '#6e45e2', color: "#fff", fontWeight: 'bold',
+        '&:hover': { bgcolor: '#6e45e2', color: "#fff" }, ...sx
       }}
       disableElevation
     >

@@ -1,7 +1,5 @@
 import React from 'react'
-import Education from '../Education/Education'
-import Certification from '../Certification/Certification'
-import { Box, Card, CardContent, Grid, Stack, Typography } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 import PageHeader from '../../Components/PageHeader/PageHeader'
 import code from '../../Assets/Images/code.jpg'
 
@@ -9,7 +7,7 @@ export default function About() {
   return (
 
     <>
-      <Grid container id="about" sx={{ px: { xs: 8 } }}>
+      <Grid container id="about" sx={{ px: { xs: 2, md: 6 } }}>
         <Grid item xs={12}>
           <PageHeader
             heading='About'
@@ -24,7 +22,7 @@ export default function About() {
           </Grid>
           <Grid item xs={12} md={9} sx={{ textAlign: 'justify',pl:{md:4}}}>
 
-            <Typography variant='body' sx={{ color: '#a242fd', textAlign: 'justify', lineHeight: 2 }}>
+            <Typography variant='body' sx={{ color: '#6e45e2', textAlign: 'justify', lineHeight: 2 }}>
               As a Passionate and Skilled Fullstack Web
               Developer, My Objective is to Leverage My
               Coding Expertise and Enthusiasm to Create

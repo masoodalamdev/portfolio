@@ -1,15 +1,6 @@
-import { Box, Card, CardContent, Chip, Grid, Stack, Typography, Button } from '@mui/material'
-import React, { useEffect, useState } from 'react'
-import { styled } from "@mui/material/styles";
-import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
-import softwarenapps from '../../Assets/Images/projects/softwarenapps.png'
-import pakistaneservices from '../../Assets/Images/projects/pakistaneservices.png'
+import {  Chip, Grid, Stack, Typography } from '@mui/material'
+import React from 'react';
 import fxcryptospot from '../../Assets/Images/projects/fxcryptospot.png'
-import modernfashiongirl from '../../Assets/Images/projects/modernfashiongirl.png'
-import pakeservicesapp from '../../Assets/Images/projects/pakeservicesapp.png'
-import omniteknologies from '../../Assets/Images/projects/omniteknologies.png'
-import { Link } from 'react-router-dom';
 import PageHeader from '../../Components/PageHeader/PageHeader';
 import MuiButton from '../../Components/MuiButton/MuiButton';
 
@@ -18,7 +9,7 @@ import MuiButton from '../../Components/MuiButton/MuiButton';
 export default function projects() {
   return (
     <>
-      <Grid container id="projects" sx={{px:{xs:8} }}>
+      <Grid container id="projects" sx={{px: { xs: 2, md: 6 }}}>
         
       <Grid item xs={12}>
         <PageHeader
@@ -47,7 +38,7 @@ export default function projects() {
                   </Stack>
                   <br/>
                   {/* <Stack direction='row' sx={{p:2}}>
-    <Button href="" variant='outlined' sx={{display: 'flex', margin: '0 auto', bgcolor: '#8B13FD', color: '#fff', borderColor: '#8B13FD', textTransform: 'capitalize', '&:hover': {color: '#8B13FD', borderColor: '#8B13FD'}}}>
+    <Button href="" variant='outlined' sx={{display: 'flex', margin: '0 auto', bgcolor: '#6e45e2', color: '#fff', borderColor: '#6e45e2', textTransform: 'capitalize', '&:hover': {color: '#6e45e2', borderColor: '#6e45e2'}}}>
       
     </Button>
     </Stack> */}

@@ -1,12 +1,12 @@
 import React from 'react'
-import { Box, Card, CardContent, Grid, Stack, Typography } from '@mui/material'
+import { Box, Grid, Typography } from '@mui/material'
 import PageHeader from '../../Components/PageHeader/PageHeader'
 import skdigitech from '../../Assets/Images/experience/skdigitech.png'
 
 export default function Experience() {
   return (
     <>
-      <Grid container id="experience" sx={{ px: { xs: 8 }}}>
+      <Grid container id="experience" sx={{ px: { xs: 2, md: 6 }}}>
         <Grid item xs={12}>
           <PageHeader
             heading='Experience'
@@ -16,15 +16,15 @@ export default function Experience() {
         <Grid container sx={{py:4}}>
 
           <Grid item xs={12} md={7}>
-                <Typography variant='h5' sx={{ color: '#8B13FD', fontWeight: 'bold' }}>
+                <Typography variant='h5' sx={{ color: '#6e45e2', fontWeight: 'bold', fontFamily: 'Poppins, sans-serif', }}>
                   Internee as Front-end Developer
                 </Typography>
-                <Typography variant='h6' sx={{ color: '#a242fd', fontWeight: 'bold' }}>
+                <Typography variant='h6' sx={{ color: '#6e45e2', fontWeight: 'bold', fontFamily: 'Poppins, sans-serif', }}>
                   Sk Digi Tech
                 </Typography>
                 <Box sx={{pl:4}}>
                 <br />
-                <Typography variant='body' sx={{ color: '#a242fd', lineHeight: 2,}}>
+                <Typography variant='body' sx={{ color: '#6e45e2', lineHeight: 2,}}>
                   <ul>
                     <li>
                     A Complete React Blog App with

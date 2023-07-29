@@ -4,38 +4,24 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Link, a, } from 'react-router-dom';
-import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
-import MenuItem from "@mui/material/MenuItem";
 import MuiButton from '../MuiButton/MuiButton';
 import { Divider, Drawer, List, ListItemButton, ListItemText } from '@mui/material';
 
-const pages = ["Products", "Pricing", "Blog", "Blog2"];
-
 
 export default function Navbar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
 
   const drawerWidth = 240;
   const drawer = (
     <Box>
-      <Box sx={{ minHeight: '64px', maxHeight: '64px', bgcolor: '#8B13FD', display: 'flex', textAlign: 'center', alignItems: 'center'}} onClick={handleDrawerToggle}>
+      <Box sx={{ minHeight: '64px', maxHeight: '64px', bgcolor: '#6e45e2', display: 'flex', textAlign: 'center', alignItems: 'center'}} onClick={handleDrawerToggle}>
       <Typography
                 variant="h5"
                 noWrap
@@ -85,8 +71,8 @@ export default function Navbar() {
 
   return (
     <>
-      <Box sx={{ flexGrow: 1, }}>
-        <AppBar position="fixed" sx={{ bgcolor: '#8B13FD', color: '#fff', px: { xs: 6 } }}>
+      <Box sx={{ flexGrow: 1, }} id="back-to-top-anchor">
+        <AppBar position="fixed" sx={{ bgcolor: '#6e45e2', color: '#fff', px: { xs: 0, md: 6 } }} >
           <Container maxWidth="xl">
             <Toolbar disableGutters>
 

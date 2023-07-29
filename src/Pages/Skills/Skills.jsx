@@ -19,10 +19,7 @@ import mui from '../../Assets/Images/skills/mui.png'
 import redux from '../../Assets/Images/skills/redux.png'
 import tailwind from '../../Assets/Images/skills/tailwind.png'
 import wix from '../../Assets/Images/skills/wix.png'
-import { Box, Card, CardContent, Grid, Stack, Typography, Chip, Button, Paper, Divider } from '@mui/material'
-import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
-import { NoteRounded } from '@mui/icons-material'
+import { Grid, Typography, Divider } from '@mui/material'
 import PageHeader from '../../Components/PageHeader/PageHeader'
 import frontend from '../../Assets/Images/skills/frontend8.gif'
 import backend from '../../Assets/Images/skills/backend9.gif'
@@ -35,7 +32,7 @@ import SkillCard from '../../Components/SkillCard/SkillCard'
 export default function Skills() {
   return (
     <>
-      <Grid container id="skills" sx={{ px: { xs: 8 }, minHeight: 100 + 'vh' }}>
+      <Grid container id="skills" sx={{ px: { xs: 2, md: 6 }, minHeight: 100 + 'vh' }}>
         <Grid item xs={12}>
           <PageHeader
             heading='Skills'
@@ -44,10 +41,10 @@ export default function Skills() {
         {/* =========== FRONT_END SKILLS  ========== */}
         <Grid container sx={{ py: 4 }} >
           <Grid item xs={12} md={7} sx={{p:4}}>
-            <img src={frontend} height='100%' width='100%' />
+            <img src={frontend} height='100%' width='100%' alt='web development' />
 
           </Grid>
-          <Grid item xs={12} md={5} sx={{ bgcolor: "#8B13FD", borderRadius: '1rem', p: 4, boxShadow: 3 }} >
+          <Grid item xs={12} md={5} sx={{ bgcolor: "#6e45e2", borderRadius: '1rem', p: 4, boxShadow: 3 }} >
           
             <Grid container spacing={2} >
               <Grid item xs={12} >
@@ -112,7 +109,7 @@ export default function Skills() {
 
         </Grid>
         <Grid item xs={12} sx={{display:{md: 'none'}}} >
-        <Divider sx={{borderColor: '#a242fd'}}/>
+        <Divider sx={{borderColor: '#6e45e2'}}/>
         </Grid>
         {/* =========== FRONT_END SKILLS ENDED ========== */}
         {/* =========== BACKEND SKILLS  ========== */}
@@ -120,7 +117,7 @@ export default function Skills() {
 
         <Grid container sx={{ py: 4 }}  >
         
-          <Grid item xs={12} md={5} sx={{ bgcolor: "#8B13FD", borderRadius: '1rem', p: 4, boxShadow: 3 }}>
+          <Grid item xs={12} md={5} sx={{ bgcolor: "#59BD56", borderRadius: '1rem', p: 4, boxShadow: 3 }}>
             <Grid container spacing={2} >
             <Grid item xs={12} >
                 <Typography variant="h6" gutterBottom sx={{ textAlign: 'center', color: '#fff', fontFamily: 'inherit', fontWeight: 'bold' }} >
@@ -145,7 +142,7 @@ export default function Skills() {
             </Grid>
           </Grid>
           <Grid item xs={12} md={7} sx={{p:4}} >
-            <img src={backend} height='100%' width='100%' />
+            <img src={backend} height='100%' width='100%'  alt='web development'/>
 
           </Grid>
         </Grid>
@@ -156,16 +153,16 @@ export default function Skills() {
 
         {/* =========== BACKEND SKILLS ENDED ========== */}
         <Grid item xs={12} sx={{display:{md: 'none'}}} >
-        <Divider sx={{borderColor: '#a242fd'}}/>
+        <Divider sx={{borderColor: '#6e45e2'}}/>
         </Grid>
 
         {/* =========== DATABASE SKILLS  ========== */}
         <Grid container sx={{ py: 4 }}  >
           <Grid item xs={12} md={7} sx={{p:4}}>
-            <img src={database} height='100%' width='100%' />
+            <img src={database} height='100%' width='100%'  alt='web development'/>
 
           </Grid>
-          <Grid item xs={12} md={5} sx={{ bgcolor: "#8B13FD", borderRadius: '1rem', p: 4, boxShadow: 3 }}>
+          <Grid item xs={12} md={5} sx={{ bgcolor: "#6e45e2", borderRadius: '1rem', p: 4, boxShadow: 3 }}>
             <Grid container spacing={2} >
             <Grid item xs={12} >
                 <Typography variant="h6" gutterBottom sx={{ textAlign: 'center', color: '#fff', fontFamily: 'inherit', fontWeight: 'bold' }} >
@@ -191,14 +188,14 @@ export default function Skills() {
 
         {/* =========== DATABASE SKILLS ENDED ========== */}
   <Grid item xs={12} sx={{display:{md: 'none'}}} >
-        <Divider sx={{borderColor: '#a242fd'}}/>
+        <Divider sx={{borderColor: '#6e45e2'}}/>
         </Grid>
         {/* =========== CMS SKILLS  ========== */}
 
 
         <Grid container sx={{ py: 4 }}  >
         
-          <Grid item xs={12} md={5} sx={{ bgcolor: "#8B13FD", borderRadius: '1rem', p: 4, boxShadow: 3 }}>
+          <Grid item xs={12} md={5} sx={{ bgcolor: "#59BD56", borderRadius: '1rem', p: 4, boxShadow: 3 }}>
             <Grid container spacing={2} >
             <Grid item xs={12} >
                 <Typography variant="h6" gutterBottom sx={{ textAlign: 'center', color: '#fff', fontFamily: 'inherit', fontWeight: 'bold' }} >
@@ -229,7 +226,7 @@ export default function Skills() {
             </Grid>
           </Grid>
           <Grid item xs={12} md={7} sx={{p:4}} >
-            <img src={cms} height='100%' width='100%' />
+            <img src={cms} height='100%' width='100%'  alt='web development'/>
 
           </Grid>
         </Grid>
@@ -239,15 +236,15 @@ export default function Skills() {
 
         {/* =========== CMS SKILLS ENDED ========== */}
         <Grid item xs={12} sx={{display:{md: 'none'}}} >
-        <Divider sx={{borderColor: '#a242fd'}}/>
+        <Divider sx={{borderColor: '#6e45e2'}}/>
         </Grid>
                 {/* =========== VCS SKILLS  ========== */}
                 <Grid container sx={{ py: 4 }}  >
           <Grid item xs={12} md={7} sx={{p:4}}>
-            <img src={vcs} height='100%' width='100%' />
+            <img src={vcs} height='100%' width='100%'  alt='web development'/>
 
           </Grid>
-          <Grid item xs={12} md={5} sx={{ bgcolor: "#8B13FD", borderRadius: '1rem', p: 4, boxShadow: 3 }}>
+          <Grid item xs={12} md={5} sx={{ bgcolor: "#6e45e2", borderRadius: '1rem', p: 4, boxShadow: 3 }}>
             <Grid container spacing={2} >
             <Grid item xs={12} >
                 <Typography variant="h6" gutterBottom sx={{ textAlign: 'center', color: '#fff', fontFamily: 'inherit', fontWeight: 'bold' }} >
@@ -273,14 +270,14 @@ export default function Skills() {
 
         {/* =========== VCS SKILLS ENDED ========== */}
         <Grid item xs={12} sx={{display:{md: 'none'}}} >
-        <Divider sx={{borderColor: '#a242fd'}}/>
+        <Divider sx={{borderColor: '#6e45e2'}}/>
         </Grid>
              {/* =========== Google SKILLS  ========== */}
 
 
              <Grid container sx={{ py: 4 }}  >
         
-        <Grid item xs={12} md={5} sx={{ bgcolor: "#8B13FD", borderRadius: '1rem', p: 4, boxShadow: 3 }}>
+        <Grid item xs={12} md={5} sx={{ bgcolor: "#59BD56", borderRadius: '1rem', p: 4, boxShadow: 3 }}>
           <Grid container spacing={2} >
           <Grid item xs={12} >
               <Typography variant="h6" gutterBottom sx={{ textAlign: 'center', color: '#fff', fontFamily: 'inherit', fontWeight: 'bold' }} >
@@ -324,7 +321,7 @@ export default function Skills() {
           </Grid>
         </Grid>
         <Grid item xs={12} md={7} sx={{p:4}} >
-          <img src={google} height='100%' width='100%' />
+          <img src={google} height='100%' width='100%'  alt='web development'/>
 
         </Grid>
       </Grid>

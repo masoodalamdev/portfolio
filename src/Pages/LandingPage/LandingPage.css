@@ -19,12 +19,12 @@
 
 .wrapper .static-txt{
   
-  color: #8B13FD;
+  color: #6e45e2;
   font-size: 60px;
   font-weight: 400;
 }
 #masoodalam{
-  color: #8B13FD;
+  color: #6e45e2;
   font-weight: bold;
 }
 .wrapper .dynamic-txts{
@@ -35,8 +35,8 @@
 }
 .dynamic-txts li{
   list-style: none;
-  color: #FC6D6D;
-  /* color: #610db1; */
+  color: #59BD56 ;
+  /* color: #6e45e2; */
   font-size: 60px;
   font-weight: 500;
   position: relative;
@@ -61,7 +61,7 @@
   width: 100%;
   /* background: #343F4F; */
   background: #fff;
-  border-left: 2px solid #FC6D6D;
+  border-left: 2px solid #59BD56 ;
   animation: typing 3s steps(10) infinite;
 }
 @keyframes typing {
