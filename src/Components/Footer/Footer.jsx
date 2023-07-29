@@ -1,13 +1,14 @@
-import { Box, Stack, Typography } from '@mui/material'
+import { Box, Card, Stack, Typography } from '@mui/material'
 import React from 'react'
 import Followbar from '../Followbar/Followbar'
 
 export default function Footer() {
+
   return (
     <>
     
-    <Box id="contact"
-    sx={{bgcolor: '#444', color: '#fff', px:{xs:12}}}
+    <Card id="contact"
+    sx={{bgcolor: '#8B13FD', color: '#fff', px:{xs:8}, py:2}}
     // display="flex"
     // justifyContent="center"
     // alignItems="center"
@@ -19,14 +20,16 @@ export default function Footer() {
     Contact
    </Typography>
   <Typography variant="body" gutterBottom sx={{textAlign: 'left', color: '#fff'}}>
-    Email : masood.alam.987@gmail.com
+    Email : <a href="mailto:masood.alam.987@gmail.com" style={{textDecoration: 'none', color: '#fff'}}>masood.alam.987@gmail.com</a>
    </Typography>
   </Stack>
+
     <Followbar/>
     
     <Typography variant='h6' style={{textAlign: 'center'}}>
     Designed and Developed by Masood Alam - © 2023 All rights reserved </Typography>
-  </Box>
+  </Card>
+
   </>
   )
 }

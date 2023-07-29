@@ -11,27 +11,28 @@ import pakeservicesapp from '../../Assets/Images/projects/pakeservicesapp.png'
 import omniteknologies from '../../Assets/Images/projects/omniteknologies.png'
 import { Link } from 'react-router-dom';
 import PageHeader from '../../Components/PageHeader/PageHeader';
+import MuiButton from '../../Components/MuiButton/MuiButton';
 
 
 
 export default function projects() {
   return (
     <>
-      <Grid container id="projects" sx={{mt: 16}}>
+      <Grid container id="projects" sx={{px:{xs:8} }}>
+        
       <Grid item xs={12}>
         <PageHeader
         heading='Projects'
         />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid container spacing={2} sx={{py:4 }}>
+        <Grid item xs={12} md={8}>
           <img src={fxcryptospot} alt="backgroundImage" width='100%' height='100%' />
 
-
-
         </Grid>
-        <Grid item xs={12} md={6} sx={{ mt: '10%' }} >
+        <Grid item xs={12} md={4} sx={{ mt: '10%' }} >
          
-          <Typography variant="h4" gutterBottom sx={{ textAlign: 'center', color: '#444', fontFamily: 'cursive' }} >
+          <Typography variant="h5" gutterBottom sx={{ textAlign: 'center', color: '#444', fontFamily: 'inherit', fontWeight: 'bold' }} >
             Forex Crypto Spot App
           </Typography>
           <Typography variant="h6" gutterBottom sx={{ textAlign: 'center', color: '#444' }} >
@@ -45,13 +46,19 @@ export default function projects() {
                     <Chip color="primary" size="small" label="Mongo DB" variant='outlined' />
                   </Stack>
                   <br/>
-                  <Stack direction="row" spacing={1} sx={{ justifyContent: 'center' }} >
-          <Button variant='contained' href='https://www.fxcryptospot.com' disableElevation sx={{textTransform: 'capitalize' , bgcolor: '#444', "&:hover": {bgcolor: "#444"}}}>
-            Read more
-          </Button>
-          </Stack>
+                  {/* <Stack direction='row' sx={{p:2}}>
+    <Button href="" variant='outlined' sx={{display: 'flex', margin: '0 auto', bgcolor: '#8B13FD', color: '#fff', borderColor: '#8B13FD', textTransform: 'capitalize', '&:hover': {color: '#8B13FD', borderColor: '#8B13FD'}}}>
+      
+    </Button>
+    </Stack> */}
+    <Stack direction='row' sx={{p:2, justifyContent: 'center'}}>
+    <MuiButton
+    text='Live Preview'
+    href='https://www.fxcryptospot.com'
+    />
+    </Stack>
         </Grid>
-
+        </Grid>
       </Grid>
     </>
   )

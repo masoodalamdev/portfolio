@@ -12,13 +12,18 @@ import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
 import MuiButton from '../MuiButton/MuiButton';
+import { Divider, Drawer, List, ListItemButton, ListItemText } from '@mui/material';
 
 const pages = ["Products", "Pricing", "Blog", "Blog2"];
 
 
 export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [mobileOpen, setMobileOpen] = React.useState(false);
 
+  const handleDrawerToggle = () => {
+    setMobileOpen((prevState) => !prevState);
+  };
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -26,22 +31,69 @@ export default function Navbar() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const drawerWidth = 240;
+  const drawer = (
+    <Box>
+      <Box sx={{ minHeight: '64px', maxHeight: '64px', bgcolor: '#8B13FD', display: 'flex', textAlign: 'center', alignItems: 'center'}} onClick={handleDrawerToggle}>
+      <Typography
+                variant="h5"
+                noWrap
+                component="a"
+                href="/"
+                sx={{
+                  mr: 2,
+                  display: { xs: "block", md: "none" },
+                  flexGrow: 1,
+                  fontFamily: "cursive",
+                  fontWeight: 700,
+                  // letterSpacing: ".3rem",
+                  color: "#fff",
+                  textDecoration: "none",
+                  textAlign: 'center'
+                }}
+              >
+                Masood Alam
+              </Typography>
+      </Box>
+      <Divider />
+      <List >
+        <ListItemButton component="a" href="/" onClick={handleDrawerToggle} >
+          <ListItemText primary="Home" />
+        </ListItemButton>
+
+        <ListItemButton component="a" href="#projects" onClick={handleDrawerToggle} >
+          <ListItemText primary="Projects" />
+        </ListItemButton>
+        <ListItemButton component="a" href="#skills" onClick={handleDrawerToggle}>
+          <ListItemText primary="Skills" />
+        </ListItemButton>
+        <ListItemButton component="a" href="#experience" onClick={handleDrawerToggle}>
+          <ListItemText primary="Experience" />
+        </ListItemButton>
+        <ListItemButton component="a" href="#about" onClick={handleDrawerToggle}>
+          <ListItemText primary="About Me" />
+        </ListItemButton>
+        <ListItemButton component="a" href="#contact" onClick={handleDrawerToggle}>
+          <ListItemText primary="Contact" />
+        </ListItemButton>
+
+      </List>
+    </Box>
+  );
+
+
   return (
-    <Box sx={{ flexGrow: 1, }}>
-      <AppBar position="fixed" sx={{ bgcolor: '#444', color: '#fff', px: { xs: 12 } }} elevation={0}>
-        <Container maxWidth="xl">
-          <Toolbar disableGutters>
-
-            {/* <Grid container > */}
-            {/* <Grid item > */}
-            {/* <Link to='/' style={{textDecoration: 'none'}}> */}
-            {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontFamily: 'cursive' }}>
-            Masood Alam
-          </Typography> */}
+    <>
+      <Box sx={{ flexGrow: 1, }}>
+        <AppBar position="fixed" sx={{ bgcolor: '#8B13FD', color: '#fff', px: { xs: 6 } }}>
+          <Container maxWidth="xl">
+            <Toolbar disableGutters>
 
 
-            {/* MOBILE MENU  */}
-            <a href='/'>
+
+
+              {/* ===========WEB MENU===================  */}
               <Typography
                 variant="h6"
                 noWrap
@@ -59,168 +111,111 @@ export default function Navbar() {
               >
                 Masood Alam
               </Typography>
-            </a>
 
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color="inherit"
-              >
-                <MenuIcon />
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: "bottom",
-                  horizontal: "left"
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "left"
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-                sx={{
-                  display: { xs: "block", md: "none" }
-                }}
-              >
-                {/* {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))} */}
-                <MenuItem onClick={handleCloseNavMenu}><a href='#projects'><Button color="inherit">Projects</Button></a></MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}><a href='#skills'><Button color="inherit">Skills</Button></a></MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}><a href='#experience'><Button color="inherit">Experience</Button></a></MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}><a href='#about'><Button color="inherit">About Me</Button></a></MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}><a href='#contact'><Button color="inherit" >Contact Me</Button></a>
-                </MenuItem>
-
-
-
-              </Menu>
-            </Box>
-            {/* MOBILE MENU  */}
-            {/* WEB MENU END */}
-
-            <Typography
-              variant="h5"
-              noWrap
-              component="a"
-              href="/"
-              sx={{
-                mr: 2,
-                display: { xs: "flex", md: "none" },
-                flexGrow: 1,
-                fontFamily: "cursive",
-                fontWeight: 700,
-                // letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none"
-              }}
-            >
-              Masood Alam
-            </Typography>
-
-            <Grid item sm>
-            </Grid>
-            <Grid item>
-              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-              <a href='#projects'>
-                {/* <a
-                  to="#projects"
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                  }
-                > */}
-                  <MuiButton text="Projects"
-                    sx={{ height: '64px' }}
-                  />
-                {/* </a> */}
-                </a>
-                <a href='#skills'>
-                {/* <a
-                 
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                  }
-                > */}
-                  <MuiButton text="Skills"
-                    sx={{ height: '64px' }}
-                  />
-                {/* </a> */}
-                </a>
-                <a href='#experience'>
-                {/* <a
-                  to="/experience"
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                  }
-                > */}
-                  <MuiButton text="Experience"
-                    sx={{ height: '64px' }}
-                  />
-                {/* </a> */}
-                </a>
-                <a href='#about'>
-
-                {/* <a
-                  to="/about"
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                  }
-                > */}
-                  <MuiButton text="About Me"
-                    sx={{ height: '64px' }}
-                  />
-                {/* </a> */}
-                </a>
-                <a href='#contact'>
-                {/* <a
-                  to="/#contact"
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "active" : ""
-                  }
-                > */}
-                  <MuiButton text="Contact Me"
-                    sx={{ height: '64px' }}
-                  />
-                {/* </a> */}
-               </a>
+              <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+                <IconButton
+                  size="large"
+                  aria-label="account of current user"
+                  aria-controls="menu-appbar"
+                  aria-haspopup="true"
+                  onClick={handleDrawerToggle}
+                  color="inherit"
+                >
+                  <MenuIcon />
+                </IconButton>
+              
               </Box>
-            </Grid>
+              {/* WEB MENU END */}
+              {/* MOBILE MENU  */}
 
-            {/* WEB MENU END */}
+              <Typography
+                variant="h5"
+                noWrap
+                component="a"
+                href="/"
+                sx={{
+                  mr: 2,
+                  display: { xs: "flex", md: "none" },
+                  flexGrow: 1,
+                  fontFamily: "cursive",
+                  fontWeight: 700,
+                  // letterSpacing: ".3rem",
+                  color: "inherit",
+                  textDecoration: "none"
+                }}
+              >
+                Masood Alam
+              </Typography>
 
-            {/* </Link>
-        </Grid>
+              <Grid item sm>
+              </Grid>
+              <Grid item>
+                <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+                  <a href='#projects'>
 
-      <Grid item sm>
-        </Grid>
-      <Grid item>
-      <a to='/portfolio'><Button color="inherit">Portfolio</Button></a>
-          <a to='/skills'><Button color="inherit">Skills</Button></a>
-          <a to='/experience'><Button color="inherit">Experience</Button></a>
-          <a to='/about'><Button color="inherit">About Me</Button></a>
-          <a to='/contact'><Button color="inherit">Contact Me</Button></a>
+                    <MuiButton text="Projects"
+                      sx={{ height: '64px' }}
+                    />
+                  </a>
+                  <a href='#skills'>
 
-      
-        </Grid>
-        </Grid>
-          
-         
-           */}
+                    <MuiButton text="Skills"
+                      sx={{ height: '64px' }}
+                    />
+                  </a>
+                  <a href='#experience'>
 
-          </Toolbar>
-        </Container>
-      </AppBar>
-      <Toolbar />
-    </Box>
+                    <MuiButton text="Experience"
+                      sx={{ height: '64px' }}
+                    />
+
+                  </a>
+                  <a href='#about'>
+
+
+                    <MuiButton text="About Me"
+                      sx={{ height: '64px' }}
+                    />
+                  </a>
+                  <a href='#contact'>
+
+                    <MuiButton text="Contact Me"
+                      sx={{ height: '64px' }}
+                    />
+                    {/* </a> */}
+                  </a>
+                </Box>
+              </Grid>
+
+              {/* MOBILE MENU END */}
+
+
+
+            </Toolbar>
+          </Container>
+        </AppBar>
+        <Toolbar />
+      </Box>
+
+
+
+      <Box component="nav">
+        <Drawer
+          // container={container}
+          variant="temporary"
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{
+            keepMounted: true, // Better open performance on mobile.
+          }}
+          sx={{
+            display: { xs: 'block', sm: 'block', },
+            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+          }}
+        >
+          {drawer}
+        </Drawer>
+      </Box>
+    </>
   );
 }
